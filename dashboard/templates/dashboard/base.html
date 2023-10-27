@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamo</title>
+  <link rel="stylesheet" href="{% static 'dashboard/css/navbar.css'%} ">
+  <style> 
+    #streamlit-frame{
+      width:100%; 
+      height:100vh; 
+      border:none; 
+    }
+  </style> 
+</head>
+
+<body>
+  <header class="container header">
+    <nav class="nav">
+      <div class="logo">
+        <h2>Dynamic Pricing</h2>
+      </div>
+
+      <div class="nav_menu" id="nav_menu">
+        <button class="close_btn" id="close_btn">
+          <i class="ri-close-fill"></i>
+        </button>
+
+        <ul class="nav_menu_list">
+          <li class="nav_menu_item">
+            <a href="#" class="nav_menu_link">About</a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="http://localhost:8501" class="nav_menu_link">Dashboard</a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="#" class="nav_menu_link">Team</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="toggle_btn" id="toggle_btn">
+        <i class="ri-menu-line"></i>
+      </button>
+    </nav>
+
+    
+</body>
+
+</html>
